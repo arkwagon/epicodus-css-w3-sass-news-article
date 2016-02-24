@@ -27,7 +27,7 @@ body {
   height: 100vh;
   display: block;
   margin: auto;
-  @include padding(0, 0, 15px, 0, 7px);
+  @include padding(0, 0, 7px, 0, 7px);
 }
 .sectionTitle {
   overflow: auto;
