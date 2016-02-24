@@ -1,0 +1,13 @@
+.weather {
+  img {
+    @include img(20px);
+    margin: 0 5px;
+  }
+}
+
+.featuredArticle {
+  img {
+    @include img(280px);
+
+  }
+}

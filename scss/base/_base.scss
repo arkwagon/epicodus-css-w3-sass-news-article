@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
  box-sizing:border-box;
- border:1px dashed red;
+ // border:1px dashed red;
 }
 .columns {
  min-height: 100px;
@@ -19,14 +19,35 @@
 }
 
 body {
-  border: 2px solid green;
+  border: 2px solid lime;
   margin: 0;
 }
 
-
 .mainContent {
-  padding: 15px;
   height: 100vh;
   display: block;
   margin: auto;
+  @include padding(0, 0, 15px, 0, 7px);
+}
+.sectionTitle {
+  overflow: auto;
+  h2 {
+    margin: 0;
+    color: darken($secondaryBlue, 3%);
+    float: left;
+  }
+  .weather {
+    float: right;
+    @include padding(0, 7px, 0px, 0, 0);
+    color: $weatherGrey;
+    span {
+      float: left;
+      font-size: 17px;
+    }
+    i {
+      font-size: 25px;
+      border-left: 1px solid #eee;
+      @include padding(0, 0, 0, 0, 7px);
+    }
+  }
 }

@@ -1,11 +1,12 @@
 header {
   overflow: auto;
-  background: $headerBlue;
-  height: 270px;
+  background: $primBlue;
+  height: 84px;
 }
 
 nav {
-  background: $navColor;
-  height: 100px;
-  margin-top: 170px;
+  overflow: auto;
+  background: $secondaryBlue;
+  height: 36px;
+  margin-top: 48px;
 }
