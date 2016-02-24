@@ -40,7 +40,7 @@
     color: white;
   }
   p {
-    @include padding(0, 27px, 0, 15px, 0);
+    @include padding(0, 27px, 0, 2px, 0);
     margin: 1px 0;
   }
   a {
@@ -69,6 +69,6 @@
     color: $weatherGrey;
   }
   p {
-    @include padding(0, 48px, 0, 15px, 0);
+    @include padding(0, 48px, 0, 2px, 0);
   }
  }
