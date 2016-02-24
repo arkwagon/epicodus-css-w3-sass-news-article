@@ -1,6 +1,6 @@
 .weather {
   img {
-    @include img(20px, $margin: (0, 5px));
+    @include img(20px, $margin: 5px);
   }
 }
 
@@ -12,4 +12,15 @@
     // @include img(230px);
 
   }
+}
+.topArticle {
+  img {
+    @include img(90px, 150px, 0px);
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.secondaryArticle {
+  @extend .topArticle;
 }

@@ -47,7 +47,7 @@ body {
     i {
       font-size: 25px;
       border-left: 1px solid #eee;
-      @include padding(0, 0, 0, 0, 7px);
+      @include padding(0px, 0px, 0, 0, 7px);
     }
   }
 }
