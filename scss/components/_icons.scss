@@ -5,6 +5,13 @@
   }
   span {
     color: white;
+    padding-right: 12px;
+    @media screen and (min-width: 730px) {
+      display: inline;
+      &:hover {
+        cursor: pointer;
+      }
+    }
     i {
       width: 40px;
       height: 40px;
@@ -16,6 +23,21 @@
       &.fa-ellipsis-h {
         padding-top: 9px;
       }
+    }
+  }
+}
+i.mobileHidden {
+  @media screen and (min-width: 730px) {
+    display: none;
+  }
+}
+
+.icons {
+  @media screen and (min-width: 730px) {
+    width: 100%;
+    .barRight {
+      float: right;
+      padding-top: 13px;
     }
   }
 }

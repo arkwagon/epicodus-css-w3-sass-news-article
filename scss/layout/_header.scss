@@ -10,6 +10,10 @@ header {
     float: right;
     @include padding(0, 0, 10px);
     color: lightblue;
+    @media screen and (min-width: 735px) {
+      font-size: 60px;
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -17,8 +21,4 @@ header {
   @include triangle(20px, $weatherGrey, down);
   float: right;
   margin-top: 9px;
-}
-
-.mobileHidden {
-  display: none;
 }

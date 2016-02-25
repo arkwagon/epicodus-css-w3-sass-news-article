@@ -7,7 +7,7 @@ p {
 }
 
 .headerContent {
-  @include contentSize(auto, 95%, block, 55px);
+  // @include contentSize(auto, 95%, block, 55px);
 }
 
 .sectionTitle {
@@ -60,6 +60,11 @@ p {
     .fa-bars {
       font-size: 15px;
       padding-right: 5px;
+    }
+    .mediumShow {
+      @media only screen and (min-width: 735px) {
+        display: inline;
+      }
     }
   }
 }

@@ -43,6 +43,9 @@ hr {
   margin: 0;
   width: 50%; }
 
+.mobileHidden {
+  display: none; }
+
 .featuredArticle {
   background-color: #F5F5F5;
   line-height: 25px;
@@ -118,12 +121,6 @@ p {
   width: 95%;
   display: block; }
 
-.headerContent {
-  margin: auto;
-  width: 95%;
-  display: block;
-  height: 55px; }
-
 .sectionTitle {
   overflow: auto; }
   .sectionTitle h2 {
@@ -179,6 +176,9 @@ p {
     .linksBarContent nav .fa-bars {
       font-size: 15px;
       padding-right: 5px; }
+    @media only screen and (min-width: 735px) {
+      .linksBarContent nav .mediumShow {
+        display: inline; } }
 
 .headerContent {
   width: 95%;
@@ -199,6 +199,10 @@ header {
     padding-top: 0;
     padding-right: 10px;
     color: lightblue; }
+    @media screen and (min-width: 735px) {
+      .title h1 {
+        font-size: 60px;
+        margin-bottom: 12px; } }
 
 .right {
   height: 0;
@@ -209,14 +213,17 @@ header {
   float: right;
   margin-top: 9px; }
 
-.mobileHidden {
-  display: none; }
-
 .title .icons {
   padding: 2px;
   float: left; }
 .title span {
-  color: white; }
+  color: white;
+  padding-right: 12px; }
+  @media screen and (min-width: 730px) {
+    .title span {
+      display: inline; }
+      .title span:hover {
+        cursor: pointer; } }
   .title span i {
     width: 40px;
     height: 40px;
@@ -227,6 +234,17 @@ header {
     text-align: center; }
     .title span i.fa-ellipsis-h {
       padding-top: 9px; }
+
+@media screen and (min-width: 730px) {
+  i.mobileHidden {
+    display: none; } }
+
+@media screen and (min-width: 730px) {
+  .icons {
+    width: 100%; }
+    .icons .barRight {
+      float: right;
+      padding-top: 13px; } }
 
 .weather img {
   height: 20px;
