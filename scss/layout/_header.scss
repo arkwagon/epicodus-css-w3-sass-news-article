@@ -1,13 +1,13 @@
 header {
   overflow: auto;
   background: $primBlue;
-  height: 55px;
 }
 
 .headerContent {
   width: 95%;
   display: block;
   margin: auto;
+  height: 55px;
 }
 
 .title {
@@ -28,35 +28,37 @@ header {
   float: right;
   margin-top: 9px;
 }
-
-.linksBar{
-  overflow: auto;
-  background: $secondaryBlue;
-  height: 32px;
-  text-align: center;
-  padding-left: 2px;
-  a {
-    color: white;
-    font-size: 19px;
-    text-decoration: none;
-    @include padding(3px, $right:6px, $left: 6px);
-    &.all {
-      background-color: black;
+.linksBarContent {
+  clear:both;
+  nav {
+    background: $secondaryBlue;
+    height: 32px;
+    text-align: center;
+    padding-left: 2px;
+    // overflow: auto;
+    a {
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      @include padding(3px, $right:6px, $left: 6px);
+      &.all {
+        background-color: black;
+        padding-right: 5px;
+        @include padding(0, 4px, 11px, 6px, 10px);
+      }
+    }
+    i {
+      color: white;
+      font-size: 25px;
+    }
+    .fa-bars {
+      font-size: 15px;
       padding-right: 5px;
-      @include padding(0, 4px, 11px, 6px, 10px);
-      // padding-left: 20px;
-      // padding-top: 1px;
     }
   }
-  i {
-    color: white;
-    font-size: 25px;
-  }
-  .fa-bars {
-    font-size: 15px;
-    padding-right: 5px;
-  }
+
 }
+
 
 .mobileHidden {
   display: none;

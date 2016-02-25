@@ -149,13 +149,13 @@ p {
 
 header {
   overflow: auto;
-  background: #005689;
-  height: 55px; }
+  background: #005689; }
 
 .headerContent {
   width: 95%;
   display: block;
-  margin: auto; }
+  margin: auto;
+  height: 55px; }
 
 .title {
   font-size: 15px; }
@@ -176,33 +176,34 @@ header {
   float: right;
   margin-top: 9px; }
 
-.linksBar {
-  overflow: auto;
-  background: #004670;
-  height: 32px;
-  text-align: center;
-  padding-left: 2px; }
-  .linksBar a {
-    color: white;
-    font-size: 19px;
-    text-decoration: none;
-    padding: 3px;
-    padding-right: 6px;
-    padding-left: 6px; }
-    .linksBar a.all {
-      background-color: black;
-      padding-right: 5px;
-      padding: 0;
-      padding-top: 4px;
-      padding-right: 11px;
-      padding-bottom: 6px;
-      padding-left: 10px; }
-  .linksBar i {
-    color: white;
-    font-size: 25px; }
-  .linksBar .fa-bars {
-    font-size: 15px;
-    padding-right: 5px; }
+.linksBarContent {
+  clear: both; }
+  .linksBarContent nav {
+    background: #004670;
+    height: 32px;
+    text-align: center;
+    padding-left: 2px; }
+    .linksBarContent nav a {
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      padding: 3px;
+      padding-right: 6px;
+      padding-left: 6px; }
+      .linksBarContent nav a.all {
+        background-color: black;
+        padding-right: 5px;
+        padding: 0;
+        padding-top: 4px;
+        padding-right: 11px;
+        padding-bottom: 6px;
+        padding-left: 10px; }
+    .linksBarContent nav i {
+      color: white;
+      font-size: 25px; }
+    .linksBarContent nav .fa-bars {
+      font-size: 15px;
+      padding-right: 5px; }
 
 .mobileHidden {
   display: none; }
