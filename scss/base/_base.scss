@@ -2,7 +2,6 @@
 
 *:not(body):not(html) {
  box-sizing:border-box;
- // border:1px dashed red;
 }
 .columns {
  min-height: 100px;
@@ -19,15 +18,15 @@
 }
 
 body {
-  border: 2px solid lime;
   margin: 0;
 }
 
 .mainContent {
   height: 100vh;
+  width: 95%;
   display: block;
   margin: auto;
-  @include padding(0, 0, 7px, 0, 7px);
+  // @include padding(0, 0, 7px, 0, 7px);
 }
 .sectionTitle {
   overflow: auto;
@@ -51,4 +50,12 @@ body {
       @include padding(0px, 0px, 0, 0, 7px);
     }
   }
+}
+
+hr {
+  clear: both;
+  border-color: #e6e6e6;
+  opacity: .3;
+  margin: 0;
+  width: 50%;
 }

@@ -34,18 +34,13 @@ html {
   box-sizing: border-box; }
 
 body {
-  border: 2px solid lime;
   margin: 0; }
 
 .mainContent {
   height: 100vh;
+  width: 95%;
   display: block;
-  margin: auto;
-  padding: 0;
-  padding-top: 0;
-  padding-right: 7px;
-  padding-bottom: 0;
-  padding-left: 7px; }
+  margin: auto; }
 
 .sectionTitle {
   overflow: auto; }
@@ -74,6 +69,13 @@ body {
       padding-bottom: 0;
       padding-left: 7px; }
 
+hr {
+  clear: both;
+  border-color: #e6e6e6;
+  opacity: .3;
+  margin: 0;
+  width: 50%; }
+
 .featuredArticle {
   background-color: #F5F5F5;
   line-height: 25px;
@@ -98,6 +100,7 @@ body {
 
 .topArticle, .secondaryArticle {
   margin: 10px 0;
+  height: 130px;
   background-color: #c01900;
   padding: 5px; }
   .topArticle:hover, .secondaryArticle:hover {
@@ -109,7 +112,7 @@ body {
     color: white; }
   .topArticle p, .secondaryArticle p {
     padding: 0;
-    padding-top: 27px;
+    padding-top: 3px;
     padding-right: 0;
     padding-bottom: 2px;
     padding-left: 0;
@@ -131,7 +134,7 @@ body {
     color: #504A4B; }
   .secondaryArticle p {
     padding: 0;
-    padding-top: 48px;
+    padding-top: 3px;
     padding-right: 0;
     padding-bottom: 2px;
     padding-left: 0; }
@@ -147,7 +150,22 @@ p {
 header {
   overflow: auto;
   background: #005689;
-  height: 84px; }
+  height: 55px; }
+
+.headerContent {
+  width: 95%;
+  display: block;
+  margin: auto; }
+
+.title {
+  font-size: 15px; }
+  .title h1 {
+    margin: 0;
+    float: right;
+    padding: 0;
+    padding-top: 0;
+    padding-right: 10px;
+    color: lightblue; }
 
 .right {
   height: 0;
@@ -158,11 +176,52 @@ header {
   float: right;
   margin-top: 9px; }
 
-nav {
+.linksBar {
   overflow: auto;
   background: #004670;
-  height: 36px;
-  margin-top: 48px; }
+  height: 32px;
+  text-align: center;
+  padding-left: 2px; }
+  .linksBar a {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 3px;
+    padding-right: 6px;
+    padding-left: 6px; }
+    .linksBar a.all {
+      background-color: black;
+      padding-right: 5px;
+      padding: 0;
+      padding-top: 4px;
+      padding-right: 11px;
+      padding-bottom: 6px;
+      padding-left: 10px; }
+  .linksBar i {
+    color: white;
+    font-size: 25px; }
+  .linksBar .fa-bars {
+    font-size: 15px;
+    padding-right: 5px; }
+
+.mobileHidden {
+  display: none; }
+
+.title .icons {
+  padding: 2px;
+  float: left; }
+.title span {
+  color: white; }
+  .title span i {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightblue;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 23px;
+    text-align: center; }
+    .title span i.fa-ellipsis-h {
+      padding-top: 9px; }
 
 .weather img {
   height: 20px;
@@ -180,6 +239,7 @@ nav {
   width: 150px;
   margin: 0px;
   float: left;
-  margin-right: 10px; }
+  margin-right: 10px;
+  padding-bottom: 4px; }
 
 /*# sourceMappingURL=application.css.map */

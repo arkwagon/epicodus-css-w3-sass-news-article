@@ -24,6 +24,7 @@
 
 .topArticle {
   margin: 10px 0;
+  height: 130px;
   background-color: $red;
   @include padding(5px);
   &:hover {
@@ -40,7 +41,7 @@
     color: white;
   }
   p {
-    @include padding(0, 27px, 0, 2px, 0);
+    @include padding(0, 3px, 0, 2px, 0);
     margin: 1px 0;
   }
   a {
@@ -65,7 +66,7 @@
     @extend %linkStyle;
   }
   p {
-    @include padding(0, 48px, 0, 2px, 0);
+    @include padding(0, 3px, 0, 2px, 0);
     @extend %linkStyle;
   }
 }
