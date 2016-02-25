@@ -36,39 +36,6 @@ html {
 body {
   margin: 0; }
 
-.mainContent {
-  height: 100vh;
-  width: 95%;
-  display: block;
-  margin: auto; }
-
-.sectionTitle {
-  overflow: auto; }
-  .sectionTitle h2 {
-    margin: 0;
-    color: #003c60;
-    float: left; }
-  .sectionTitle .weather {
-    float: right;
-    padding: 0;
-    padding-top: 2px;
-    padding-right: 0px;
-    padding-bottom: 0;
-    padding-left: 0;
-    color: #504A4B; }
-    .sectionTitle .weather span {
-      float: left;
-      font-size: 19px;
-      padding-top: 3px; }
-    .sectionTitle .weather i {
-      font-size: 25px;
-      border-left: 1px solid #eee;
-      padding: 0px;
-      padding-top: 0px;
-      padding-right: 0;
-      padding-bottom: 0;
-      padding-left: 7px; }
-
 hr {
   clear: both;
   border-color: #e6e6e6;
@@ -119,7 +86,6 @@ hr {
     margin: 1px 0; }
   .topArticle a, .secondaryArticle a {
     text-decoration: none;
-    color: white;
     color: #ff8573; }
   .topArticle span, .secondaryArticle span {
     color: white;
@@ -147,34 +113,43 @@ hr {
 p {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
-header {
-  overflow: auto;
-  background: #005689; }
+.mainContent {
+  margin: auto;
+  width: 95%;
+  display: block; }
 
 .headerContent {
+  margin: auto;
   width: 95%;
   display: block;
-  margin: auto;
   height: 55px; }
 
-.title {
-  font-size: 15px; }
-  .title h1 {
+.sectionTitle {
+  overflow: auto; }
+  .sectionTitle h2 {
     margin: 0;
+    color: #003c60;
+    float: left; }
+  .sectionTitle .weather {
     float: right;
     padding: 0;
-    padding-top: 0;
-    padding-right: 10px;
-    color: lightblue; }
-
-.right {
-  height: 0;
-  width: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #504A4B;
-  float: right;
-  margin-top: 9px; }
+    padding-top: 2px;
+    padding-right: 0px;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #504A4B; }
+    .sectionTitle .weather span {
+      float: left;
+      font-size: 19px;
+      padding-top: 3px; }
+    .sectionTitle .weather i {
+      font-size: 25px;
+      border-left: 1px solid #eee;
+      padding: 0px;
+      padding-top: 0px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 7px; }
 
 .linksBarContent {
   clear: both; }
@@ -204,6 +179,35 @@ header {
     .linksBarContent nav .fa-bars {
       font-size: 15px;
       padding-right: 5px; }
+
+.headerContent {
+  width: 95%;
+  display: block;
+  margin: auto;
+  height: 55px; }
+
+header {
+  overflow: auto;
+  background: #005689; }
+
+.title {
+  font-size: 15px; }
+  .title h1 {
+    margin: 0;
+    float: right;
+    padding: 0;
+    padding-top: 0;
+    padding-right: 10px;
+    color: lightblue; }
+
+.right {
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #504A4B;
+  float: right;
+  margin-top: 9px; }
 
 .mobileHidden {
   display: none; }

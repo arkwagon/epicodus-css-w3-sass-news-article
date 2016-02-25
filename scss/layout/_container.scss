@@ -1,3 +1,72 @@
 p {
   font-family: $helvetica;
 }
+
+.mainContent {
+  @include contentSize(auto, 95%, block);
+}
+
+.headerContent {
+  @include contentSize(auto, 95%, block, 55px);
+}
+
+.sectionTitle {
+  overflow: auto;
+  h2 {
+    margin: 0;
+    color: darken($secondaryBlue, 3%);
+    float: left;
+  }
+  .weather {
+    float: right;
+    @include padding(0, 2px, 0px, 0, 0);
+    color: $weatherGrey;
+    span {
+      float: left;
+      font-size: 19px;
+      padding-top: 3px;
+    }
+    i {
+      font-size: 25px;
+      border-left: 1px solid #eee;
+      @include padding(0px, 0px, 0, 0, 7px);
+    }
+  }
+}
+
+.linksBarContent {
+  clear:both;
+  nav {
+    background: $secondaryBlue;
+    height: 32px;
+    text-align: center;
+    padding-left: 2px;
+    // overflow: auto;
+    a {
+      color: white;
+      font-size: 19px;
+      text-decoration: none;
+      @include padding(3px, $right:6px, $left: 6px);
+      &.all {
+        background-color: black;
+        padding-right: 5px;
+        @include padding(0, 4px, 11px, 6px, 10px);
+      }
+    }
+    i {
+      color: white;
+      font-size: 25px;
+    }
+    .fa-bars {
+      font-size: 15px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.headerContent {
+  width: 95%;
+  display: block;
+  margin: auto;
+  height: 55px;
+}

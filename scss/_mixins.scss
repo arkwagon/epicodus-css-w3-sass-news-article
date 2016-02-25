@@ -11,3 +11,10 @@
   width: $width;
   margin: $margin
 }
+
+@mixin contentSize($margin, $width, $display:null, $height:null) {
+  margin: $margin;
+  width: $width;
+  display: $display;
+  height: $height;
+}
