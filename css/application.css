@@ -1,3 +1,168 @@
+html {
+  box-sizing: border-box; }
 
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.secondaryArticle, .subArticle {
+  background-color: #F5F5F5;
+  margin: 10px 0;
+  border-top: 1px solid #56c0ff;
+  clear: both; }
+  .secondaryArticle:hover, .subArticle:hover {
+    background-color: #ebebeb;
+    cursor: pointer; }
+
+.topArticle h1, .secondaryArticle h1, .subArticle span, .subArticle h1 {
+  font-size: 18px; }
+
+.secondaryArticle span a, .secondaryArticle h1 a, .secondaryArticle p a, .subArticle a {
+  color: #005689;
+  text-decoration: none; }
+
+*:not(body):not(html) {
+  box-sizing: border-box; }
+
+.columns {
+  min-height: 100px; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  border: 2px solid lime;
+  margin: 0; }
+
+.mainContent {
+  height: 100vh;
+  display: block;
+  margin: auto;
+  padding: 0;
+  padding-top: 0;
+  padding-right: 7px;
+  padding-bottom: 0;
+  padding-left: 7px; }
+
+.sectionTitle {
+  overflow: auto; }
+  .sectionTitle h2 {
+    margin: 0;
+    color: #003c60;
+    float: left; }
+  .sectionTitle .weather {
+    float: right;
+    padding: 0;
+    padding-top: 7px;
+    padding-right: 0px;
+    padding-bottom: 0;
+    padding-left: 0;
+    color: #504A4B; }
+    .sectionTitle .weather span {
+      float: left;
+      font-size: 17px; }
+    .sectionTitle .weather i {
+      font-size: 25px;
+      border-left: 1px solid #eee;
+      padding: 0px;
+      padding-top: 0px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 7px; }
+
+.featuredArticle {
+  background-color: #F5F5F5;
+  line-height: 25px;
+  padding: 0px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0; }
+  .featuredArticle:hover {
+    background-color: #ebebeb;
+    cursor: pointer; }
+  .featuredArticle h1 {
+    padding: 3px;
+    margin: 0;
+    font-size: 20px; }
+  .featuredArticle p {
+    padding: 3px;
+    display: none; }
+  .featuredArticle a {
+    text-decoration: none;
+    color: #005689; }
+
+.topArticle, .secondaryArticle {
+  margin: 10px 0;
+  background-color: #c01900;
+  padding: 5px; }
+  .topArticle:hover, .secondaryArticle:hover {
+    background-color: #A11500; }
+  .topArticle a:hover, .secondaryArticle a:hover {
+    text-decoration: underline; }
+  .topArticle h1, .secondaryArticle h1 {
+    margin: 0;
+    color: white; }
+  .topArticle p, .secondaryArticle p {
+    padding: 0;
+    padding-top: 27px;
+    padding-right: 0;
+    padding-bottom: 2px;
+    padding-left: 0;
+    margin: 1px 0; }
+  .topArticle a, .secondaryArticle a {
+    text-decoration: none;
+    color: white;
+    color: #ff8573; }
+  .topArticle span, .secondaryArticle span {
+    color: white;
+    font-weight: bold; }
+
+.secondaryArticle {
+  background-color: #F5F5F5; }
+  .secondaryArticle:hover {
+    background-color: #ebebeb;
+    cursor: pointer; }
+  .secondaryArticle span, .secondaryArticle h1 {
+    color: #504A4B; }
+  .secondaryArticle p {
+    padding: 0;
+    padding-top: 48px;
+    padding-right: 0;
+    padding-bottom: 2px;
+    padding-left: 0; }
+
+.subArticle span, .subArticle h1 {
+  color: #504A4B; }
+
+header {
+  overflow: auto;
+  background: #005689;
+  height: 84px; }
+
+nav {
+  overflow: auto;
+  background: #004670;
+  height: 36px;
+  margin-top: 48px; }
+
+.weather img {
+  height: 20px;
+  margin: 5px; }
+
+.featuredArticle img {
+  display: block;
+  width: 100%;
+  margin: auto; }
+
+.topArticle img, .secondaryArticle img {
+  height: 90px;
+  width: 150px;
+  margin: 0px;
+  float: left;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=application.css.map */

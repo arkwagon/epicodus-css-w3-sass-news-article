@@ -36,7 +36,7 @@
   }
   h1 {
     margin: 0;
-    font-size: 20px;
+    @extend %fontSize;
     color: white;
   }
   p {
@@ -54,21 +54,27 @@
   }
 }
 .secondaryArticle {
+  @extend %articleStyles;
   background-color: $gray;
-  margin: 10px 0;
-  border-top: 1px solid lighten($primBlue, 40%);
-  clear: both;
   &:hover {
     background-color: $hover;
     cursor: pointer;
   }
-  a {
-    color: $primBlue;
-  }
   span, h1 {
     color: $weatherGrey;
+    @extend %linkStyle;
   }
   p {
     @include padding(0, 48px, 0, 2px, 0);
+    @extend %linkStyle;
   }
+}
+
+ .subArticle {
+   @extend %articleStyles;
+   @extend %linkStyle;
+   span, h1 {
+     color: $weatherGrey;
+     @extend %fontSize;
+   }
  }
