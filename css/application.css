@@ -56,14 +56,15 @@ body {
   .sectionTitle .weather {
     float: right;
     padding: 0;
-    padding-top: 7px;
+    padding-top: 2px;
     padding-right: 0px;
     padding-bottom: 0;
     padding-left: 0;
     color: #504A4B; }
     .sectionTitle .weather span {
       float: left;
-      font-size: 17px; }
+      font-size: 19px;
+      padding-top: 3px; }
     .sectionTitle .weather i {
       font-size: 25px;
       border-left: 1px solid #eee;
@@ -135,13 +136,27 @@ body {
     padding-bottom: 2px;
     padding-left: 0; }
 
-.subArticle span, .subArticle h1 {
-  color: #504A4B; }
+.subArticle {
+  height: 75px; }
+  .subArticle span, .subArticle h1 {
+    color: #504A4B; }
+
+p {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 header {
   overflow: auto;
   background: #005689;
   height: 84px; }
+
+.right {
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #504A4B;
+  float: right;
+  margin-top: 9px; }
 
 nav {
   overflow: auto;
@@ -151,7 +166,9 @@ nav {
 
 .weather img {
   height: 20px;
-  margin: 5px; }
+  margin: 5px;
+  border-right: 1px solid #cecbcb;
+  padding-right: 8px; }
 
 .featuredArticle img {
   display: block;

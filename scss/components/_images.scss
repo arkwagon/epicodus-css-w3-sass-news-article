@@ -1,6 +1,9 @@
 .weather {
   img {
     @include img(20px, $margin: 5px);
+    border-right: 1px solid
+     lighten($weatherGrey, 50%);
+     padding-right: 8px;
   }
 }
 

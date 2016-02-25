@@ -38,11 +38,12 @@ body {
   }
   .weather {
     float: right;
-    @include padding(0, 7px, 0px, 0, 0);
+    @include padding(0, 2px, 0px, 0, 0);
     color: $weatherGrey;
     span {
       float: left;
-      font-size: 17px;
+      font-size: 19px;
+      padding-top: 3px;
     }
     i {
       font-size: 25px;

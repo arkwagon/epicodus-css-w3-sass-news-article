@@ -4,6 +4,12 @@ header {
   height: 84px;
 }
 
+.right {
+  @include triangle(20px, $weatherGrey, down);
+  float: right;
+  margin-top: 9px;
+}
+
 nav {
   overflow: auto;
   background: $secondaryBlue;

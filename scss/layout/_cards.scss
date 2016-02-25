@@ -73,6 +73,7 @@
  .subArticle {
    @extend %articleStyles;
    @extend %linkStyle;
+   height: 75px;
    span, h1 {
      color: $weatherGrey;
      @extend %fontSize;
