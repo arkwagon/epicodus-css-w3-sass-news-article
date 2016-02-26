@@ -69,7 +69,7 @@ hr {
     color: #005689; }
   @media screen and (min-width: 735px) {
     .featuredArticle {
-      width: 495px;
+      width: 517px;
       height: 436px;
       float: left;
       margin-right: 5px; } }
@@ -101,7 +101,7 @@ hr {
     font-weight: bold; }
   @media screen and (min-width: 735px) {
     .topArticle, .secondaryArticle {
-      width: 150px;
+      width: 162px;
       height: 436px;
       margin: 0;
       float: left; } }
@@ -122,13 +122,13 @@ hr {
     padding-left: 0; }
   @media screen and (min-width: 735px) {
     .secondaryArticle.bernie {
-      width: 155px;
+      width: 163.5px;
       height: 469px;
       margin: 5px;
       float: left; } }
   @media screen and (min-width: 735px) {
     .secondaryArticle.walrus {
-      width: 155px;
+      width: 163.5px;
       height: 469px;
       margin: 5px;
       float: left; } }
@@ -141,7 +141,7 @@ hr {
   @media screen and (min-width: 735px) {
     .subArticle {
       height: 150px;
-      width: 155px;
+      width: 163.5px;
       margin: 5px;
       margin-right: 0px;
       float: left; } }
@@ -308,5 +308,8 @@ header {
   float: left;
   margin-right: 10px;
   padding-bottom: 4px; }
+  @media screen and (min-width: 735px) {
+    .topArticle img, .secondaryArticle img {
+      width: 140px; } }
 
 /*# sourceMappingURL=application.css.map */
