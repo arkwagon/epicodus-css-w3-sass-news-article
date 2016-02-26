@@ -13,7 +13,11 @@
     width: 100%;
     margin: auto;
     // @include img(230px);
-
+    @media screen and (min-width: 735px) {
+      display: inline-block;
+      float: right;
+      width: 500px;
+    }
   }
 }
 .topArticle {

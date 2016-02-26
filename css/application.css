@@ -67,6 +67,12 @@ hr {
   .featuredArticle a {
     text-decoration: none;
     color: #005689; }
+  @media screen and (min-width: 735px) {
+    .featuredArticle {
+      width: 495px;
+      height: 436px;
+      float: left;
+      margin-right: 5px; } }
 
 .topArticle, .secondaryArticle {
   margin: 10px 0;
@@ -93,9 +99,16 @@ hr {
   .topArticle span, .secondaryArticle span {
     color: white;
     font-weight: bold; }
+  @media screen and (min-width: 735px) {
+    .topArticle, .secondaryArticle {
+      width: 150px;
+      height: 436px;
+      margin: 0;
+      float: left; } }
 
 .secondaryArticle {
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  clear: none; }
   .secondaryArticle:hover {
     background-color: #ebebeb;
     cursor: pointer; }
@@ -107,11 +120,31 @@ hr {
     padding-right: 0;
     padding-bottom: 2px;
     padding-left: 0; }
+  @media screen and (min-width: 735px) {
+    .secondaryArticle.bernie {
+      width: 155px;
+      height: 469px;
+      margin: 5px;
+      float: left; } }
+  @media screen and (min-width: 735px) {
+    .secondaryArticle.walrus {
+      width: 155px;
+      height: 469px;
+      margin: 5px;
+      float: left; } }
 
 .subArticle {
+  clear: none;
   height: 75px; }
   .subArticle span, .subArticle h1 {
     color: #504A4B; }
+  @media screen and (min-width: 735px) {
+    .subArticle {
+      height: 150px;
+      width: 155px;
+      margin: 5px;
+      margin-right: 0px;
+      float: left; } }
 
 p {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
@@ -121,12 +154,24 @@ p {
   width: 95%;
   display: block; }
 
+.headerContent {
+  margin: auto;
+  width: 95%;
+  display: block;
+  height: 55px; }
+
 .sectionTitle {
   overflow: auto; }
   .sectionTitle h2 {
     margin: 0;
     color: #003c60;
     float: left; }
+  @media only screen and (min-width: 735px) {
+    .sectionTitle .mobileHidden {
+      clear: both;
+      display: block;
+      margin: 0;
+      float: left; } }
   .sectionTitle .weather {
     float: right;
     padding: 0;
@@ -179,12 +224,6 @@ p {
     @media only screen and (min-width: 735px) {
       .linksBarContent nav .mediumShow {
         display: inline; } }
-
-.headerContent {
-  width: 95%;
-  display: block;
-  margin: auto;
-  height: 55px; }
 
 header {
   overflow: auto;
@@ -256,6 +295,11 @@ header {
   display: block;
   width: 100%;
   margin: auto; }
+  @media screen and (min-width: 735px) {
+    .featuredArticle img {
+      display: inline-block;
+      float: right;
+      width: 500px; } }
 
 .topArticle img, .secondaryArticle img {
   height: 90px;

@@ -7,7 +7,7 @@ p {
 }
 
 .headerContent {
-  // @include contentSize(auto, 95%, block, 55px);
+  @include contentSize(auto, 95%, block, 55px);
 }
 
 .sectionTitle {
@@ -17,6 +17,15 @@ p {
     color: darken($secondaryBlue, 3%);
     float: left;
   }
+  .mobileHidden {
+    @media only screen and (min-width: 735px) {
+      clear: both;
+      display: block;
+      margin: 0;
+      float: left;
+    }
+  }
+
   .weather {
     float: right;
     @include padding(0, 2px, 0px, 0, 0);
@@ -67,11 +76,4 @@ p {
       }
     }
   }
-}
-
-.headerContent {
-  width: 95%;
-  display: block;
-  margin: auto;
-  height: 55px;
 }

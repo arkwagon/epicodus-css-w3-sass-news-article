@@ -20,6 +20,12 @@
     text-decoration: none;
     color: $primBlue;
   }
+  @media screen and (min-width: 735px) {
+    width: 495px;
+    height: 436px;
+    float: left;
+    margin-right: 5px;
+  }
 }
 
 .topArticle {
@@ -52,10 +58,17 @@
     color: white;
     font-weight: bold;
   }
+  @media screen and (min-width: 735px) {
+    width: 150px;
+    height: 436px;
+    margin: 0;
+    float: left;
+  }
 }
 .secondaryArticle {
   @extend %articleStyles;
   background-color: $gray;
+  clear: none;
   &:hover {
     background-color: $hover;
     cursor: pointer;
@@ -68,14 +81,38 @@
     @include padding(0, 3px, 0, 2px, 0);
     @extend %linkStyle;
   }
+  &.bernie {
+    @media screen and (min-width: 735px) {
+      width: 155px;
+      height: 469px;
+      margin: 5px;
+      float: left;
+    }
+  }
+  &.walrus {
+    @media screen and (min-width: 735px) {
+      width: 155px;
+      height: 469px;
+      margin: 5px;
+      float: left;
+    }
+  }
 }
 
  .subArticle {
    @extend %articleStyles;
    @extend %linkStyle;
+   clear: none;
    height: 75px;
    span, h1 {
      color: $weatherGrey;
      @extend %fontSize;
+   }
+   @media screen and (min-width: 735px) {
+     height: 150px;
+     width: 155px;
+     margin: 5px;
+     margin-right: 0px;
+     float: left;
    }
  }
